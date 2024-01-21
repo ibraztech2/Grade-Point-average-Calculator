@@ -1,3 +1,9 @@
+import sys
+print(platform)
+"""'
+                                                IBRAZTECH  did it
+"""
+
 def calculate_exam_grade(exam_score, test_score):
     total_score = exam_score + test_score
     if total_score >= 70:
@@ -24,7 +30,7 @@ def input_collector():
         exam_score = eval(input(f'Enter your exam score for {course_name}: '))
         
         grade = calculate_exam_grade(exam_score, test_score)
-        unit_scored = return_Unit(grade)
+        unit_scored = return_Unit(grade) * course_unit
         aggregat_score += unit_scored
         aggregat_score_unit += course_unit
 
@@ -52,9 +58,10 @@ def return_Unit(grade_scored):
         return 0
 def gpa_calculator_(total_course_unit, total_unit_scored,courses):
     gpa_ = total_unit_scored/total_course_unit
-    prompt_user = input('Enter do you want to see your gpa ?').strip().upper()
+    print(total_course_unit,total_unit_scored)
+    prompt_user = input(' Do you want to see your Grade point average ? ').strip().upper()
     if prompt_user:
-        print(f'youf GPA for the semester is {gpa_:.2f}')
+        print(f'your GPA for the semester is {gpa_:.2f}')
     else:
         print(courses)
 
@@ -70,3 +77,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+''' 
+                                              writer :  IBRAZTECH
+'''
