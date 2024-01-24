@@ -1,5 +1,4 @@
 import sys
-print(platform)
 """'
                                                 IBRAZTECH  did it
 """
