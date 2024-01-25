@@ -72,8 +72,12 @@ def main():
     courses = input_collector()
 
     for course in courses:
-        print(f"Course: {course['Course Name']}, Exam Score: {course['Exam Score']}, Test Score: {course['Test Score']}, Grade: {course['Grade']}, Course Unit: {course['Course Unit']}")
+        print("|------------------"*5,sep='|',end="|")
+        print('')
+        print(f"| Course: {course['Course Name']}        | Exam Score: {course['Exam Score']}    |Test Score: {course['Test Score']}     | Grade: {course['Grade']}         | Course Unit: {course['Course Unit']}   |")
 
+    print("|__________________" * 5, sep='|', end="|")
+    print('')
 if __name__ == "__main__":
     main()
 
